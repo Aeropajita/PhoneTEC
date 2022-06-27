@@ -1,0 +1,371 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('fontawesome-free-6.1.1-web/css/all.min.css');
+
+/* Color Theme Swatches in Hex */
+.naranja-1-hex { color: #9F410A; }
+.naranja-2-hex { color: #5F2706; }
+.naranja-3-hex { color: #DF5C0E; }
+.naranja-4-hex { color: #EC610E; }
+.naranja-5-hex { color: #C5510C; }
+
+/* Color Theme Swatches in RGBA */
+.naranja-1-rgba { color: rgba(158, 65, 9, 1); }
+.naranja-2-rgba { color: rgba(94, 39, 5, 1); }
+.naranja-3-rgba { color: rgba(223, 91, 13, 1); }
+.naranja-4-rgba { color: rgba(235, 97, 14, 1); }
+.naranja-5-rgba { color: rgba(196, 80, 11, 1); }
+
+/* Color Theme Swatches in HSLA */
+.naranja-1-hsla { color: hsla(22, 88, 33, 1); }
+.naranja-2-hsla { color: hsla(22, 88, 19, 1); }
+.naranja-3-hsla { color: hsla(22, 88, 46, 1); }
+.naranja-4-hsla { color: hsla(22, 88, 49, 1); }
+.naranja-5-hsla { color: hsla(22, 88, 40, 1); }
+
+:root{ /* Paleta de Colores */
+    --color1:#9F410A;
+    --color2:#5F2706;
+    --color3:#DF5C0E;
+    --color4:#EC610E;
+    --color5:#C5510C;
+    --color-blanco:#FFFFFF;
+    --color-negro:#000000;
+    --color-gris-claro:#CCCCCC;
+    --color-gris-oscuro:#555555;
+}
+
+body{
+    background-color: var(--color-blanco); 
+    color: var(--color-negro);
+    font-family:'Acme', sans-serif;;
+    margin: 0;
+    letter-spacing: 2px;
+    overflow-x: hidden;
+}
+
+/* Aquí inicia el desarrollo de la barra inicio con el logo de la Pagína */
+
+#main-inicio{ 
+    padding-top: 0%;
+    padding-bottom: auto;
+}
+
+#main-inicio i{
+    padding-right: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: wheat;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: coral
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+/* Aquí termina el desarrollo de la barra inicio con el logo de la Pagína */
+
+
+img{
+    display: block; 
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin:0; 
+}
+
+h1{
+    font-weight: 900;
+    font-size: 70px;
+    letter-spacing: -2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color4);
+}
+
+h2{
+    font-weight: 200;
+    font-size: 40px;
+    letter-spacing: -1px;
+    text-transform: uppercase; 
+    color: var(--color4);
+
+}
+
+h3{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase; 
+}
+
+#main-header{
+    padding-top: 500px;
+    padding-bottom: 500px;
+    color: var(--color-blanco);
+    background-image: url(../images/celulares.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#main-header h1{
+    letter-spacing: 2px;
+}
+
+#main-header p{
+    margin-bottom: auto;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#acerca-nosotros h1{
+    font-size: 55px;
+    letter-spacing: -2px;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+#Animate {
+    background-image: url("../images/Fondo\ 1.jpg");
+}
+
+#Animate h2{
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#Caracteristicas h3{
+    text-transform: lowercase;
+    font-size: 40x;
+    color: var(--color1);
+}
+
+#Animate{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-image: url(../images/Fondo\ 1.jpg);
+    background-size: 100% 100%;
+}
+
+#Celulares-lujosos{
+    color: var(--color-negro);
+}
+
+#Iphone14{
+    background-image: url("../images/Fondo\ 1.jpg");
+    color: var(--color-blanco);
+    background-size: 100% 100%;
+}
+
+#Iphone-12{
+    background-image: url("../images/Fondo\ 1.jpg");
+    color: var(--color-blanco);
+    background-size: 100% 100%;
+}
+
+#Ford-Mustang h3{
+    color: var(--color4);
+}
+
+#Precios{
+    background-image: url(../images/Fondo\ 3.jpg);
+    background-size: 100% 100%;
+    color: var(--color-blanco);
+}
+
+#Ford-Model-T{
+    background-image: url("../images/Fondo\ 1.jpg");
+    color: var(--color-blanco);
+    background-size: 100% 100%;
+}
+
+#Ford-Model-T h3{
+    color: var(--color4);
+}
+
+.padded{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    
+}
+
+.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row{
+    display: flex; 
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col{
+    flex-basis: 0; 
+    flex-grow: 1; 
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.pre-footer{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.pre-footer h2{
+    text-transform: uppercase;
+}
+
+.footer{
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.contenido-footer{
+    padding: 20px 0;
+    background-color: var(--color-negro);
+}
+
+.container1{
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Tittle{
+    color: orange;
+}
+
+.Marcas{
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    color: var(--color5);
+}
+
+.List-Footer{
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.List-Marca{
+    margin: 10px 0;
+    
+}
+
+.List-Marca a{
+    color: var(--color-blanco);
+    text-decoration: none;
+}
+
+.col2{
+    padding-right: 300px;
+    padding-left: 300px;
+    
+}
+
+.Iconos h2{
+    color: var(--color-blanco);
+    font-size: 15px;
+    text-transform: lowercase;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.Iconos i{
+    color: var(--color-blanco);
+}
+
+.Tittle-Contáctanos h3{
+    text-align: top;
+}
+
+.footer-text {
+    letter-spacing: -1px !important;
+}
+
+#Tips{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    color: var(--color-blanco);
+    background-image: url(../images/Fondo\ 2.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
